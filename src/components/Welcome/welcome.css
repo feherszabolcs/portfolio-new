@@ -1,0 +1,36 @@
+.animated-typing {
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  align-self: center;
+  font-size: calc(15px + 2vmin);
+  font-weight: 600;
+
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.contact-button {
+  margin: 30px;
+  width: auto;
+  min-height: 5vh;
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -ms-transform: translate(-60%, -40%);
+  transform: translate(-50%, -40%);
+  font-size: calc(2px + 1.5vmin);
+}
+.welcome-body {
+  height: 100vh;
+  min-height: 100vh;
+  background-color: white;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+}
