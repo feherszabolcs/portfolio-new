@@ -15,8 +15,10 @@
 #about-title {
   color: var(--bs-body-color);
   font-size: calc(15px +2vmin);
+  font-weight: 600;
   display: flex;
   align-items: center;
+  margin-bottom: 10vh;
 }
 #about-title::before,
 #about-title::after {
@@ -25,4 +27,14 @@
   padding: 1.5px;
   background-color: var(--bs-body-color);
   margin: 20px;
+  margin-right: 20px;
+}
+.about-skills {
+  margin: 0 2vw;
+}
+.about-desc {
+  margin: 40px 2vw;
+}
+a{
+  text-decoration: none;
 }

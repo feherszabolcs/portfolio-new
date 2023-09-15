@@ -2,7 +2,6 @@ import 'bootstrap/dist/css/bootstrap.css'
 import ReactTyped from 'react-typed'
 import './welcome.css'
 
-
 export const Welcome = () => {
 
 
@@ -18,6 +17,7 @@ export const Welcome = () => {
             <div >
                 <button className='btn btn-outline-primary contact-button'>Contact me!</button>
             </div>
+
         </div>
     )
 }

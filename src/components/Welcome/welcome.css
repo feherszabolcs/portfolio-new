@@ -14,7 +14,7 @@
   transform: translate(-50%, -50%);
 }
 .contact-button {
-  margin: 30px;
+  margin: 35px;
   width: auto;
   min-height: 5vh;
   margin: 0;
@@ -23,7 +23,7 @@
   left: 50%;
   -ms-transform: translate(-60%, -40%);
   transform: translate(-50%, -40%);
-  font-size: calc(2px + 1.5vmin);
+  font-size: calc(5px + 1.5vmin);
 }
 .welcome-body {
   height: 100vh;
