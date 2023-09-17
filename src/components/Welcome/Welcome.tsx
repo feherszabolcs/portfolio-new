@@ -4,7 +4,6 @@ import './welcome.css'
 
 export const Welcome = () => {
 
-
     return (
         <div className='welcome-body'>
             <div className='animated-typing'>
@@ -17,7 +16,6 @@ export const Welcome = () => {
             <div >
                 <button className='btn btn-outline-primary contact-button'>Contact me!</button>
             </div>
-
         </div>
     )
 }
