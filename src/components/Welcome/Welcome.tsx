@@ -4,7 +4,11 @@ import './welcome.css'
 import Lottie from 'lottie-react'
 import bgAnimation from '../../assets/Animation - 1695021585645.json'
 
-export const Welcome = () => {
+interface Props {
+    handleClick(): void
+}
+
+export const Welcome = ({ handleClick }: Props) => {
 
     return (
         <div className='welcome-body'>
@@ -17,7 +21,7 @@ export const Welcome = () => {
                 />
             </div>
             <div >
-                <button className='btn btn-outline-primary contact-button'>Contact me!</button>
+                <button className='btn btn-outline-primary contact-button' onClick={handleClick}>Contact me!</button>
             </div>
         </div>
     )
