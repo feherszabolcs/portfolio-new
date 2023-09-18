@@ -7,14 +7,12 @@ import { AiFillHeart } from 'react-icons/ai'
 import ReactTyped from 'react-typed'
 import Lottie from 'lottie-react'
 import chairPerson from '../../assets/Animation - 1695025323106.json'
-import { forwardRef } from 'react'
-import React from 'react'
 
 
-export const About = forwardRef(function About(ref) {
+export const About = ({ aboutRef } : any) => {
 
     return (
-        <div className='about-body' ref={ref}>
+        <div className='about-body' ref={aboutRef}>
             <h1 id='about-title'><ReactTyped strings={["About me."]}
                 typeSpeed={120}
                 backSpeed={150}
@@ -45,4 +43,3 @@ export const About = forwardRef(function About(ref) {
         </div>
     )
 }
-)

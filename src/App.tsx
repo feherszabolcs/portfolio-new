@@ -5,17 +5,14 @@ import { useRef } from 'react'
 
 function App() {
 
-  const ref = useRef<HTMLDivElement>(null)
-
-  const handleContactClick = () => {
-    ref.current?.scrollIntoView()
-  }
+  const welcomeRef = useRef(null);  //navigation to another component -> pass these props with a type of any
+  const aboutRef = useRef(null);
 
 
   return (
     <>
-      <Welcome handleClick={handleContactClick} />
-      <About ref={ref} />
+      <Welcome aboutRef={aboutRef} />
+      <About aboutRef={aboutRef} welcomeRef={welcomeRef} />
     </>
   )
 }
