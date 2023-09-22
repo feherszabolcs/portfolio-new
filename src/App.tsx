@@ -3,6 +3,7 @@ import { Welcome } from './components/Welcome/Welcome'
 import { About } from './components/About/About'
 import { Switch } from './elements/ToggleSwitch/Switch'
 import { useRef } from 'react'
+import { DarkmodeProvider } from './elements/Darkmode/DarkmodeToggle'
 
 function App() {
 
@@ -11,11 +12,12 @@ function App() {
 
   return (
     <>
+      <DarkmodeProvider>
+        <Welcome aboutRef={aboutRef} />
+        <Switch />
 
-      <Welcome aboutRef={aboutRef} />
-      <Switch />
-
-      <About aboutRef={aboutRef} welcomeRef={welcomeRef} />
+        <About aboutRef={aboutRef} welcomeRef={welcomeRef} />
+      </DarkmodeProvider>
     </>
   )
 }
