@@ -12,16 +12,15 @@
   background-color: white;
   font-size: 300px;
 }
-#about-title {
-  color: var(--bs-body-color);
+.about-title {
   font-size: calc(15px +2vmin);
   font-weight: 600;
   display: flex;
   align-items: center;
   margin-bottom: 10vh;
 }
-#about-title::before,
-#about-title::after {
+.about-title::before,
+.about-title::after {
   flex: 1;
   content: "";
   padding: 1.5px;
@@ -32,9 +31,14 @@
 .about-skills {
   margin: 0 2vw;
 }
-/* .about-desc {
-  margin: 40px 2vw;
-} */
-a{
+a {
   text-decoration: none;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+.light-mode {
+  background-color: white;
 }

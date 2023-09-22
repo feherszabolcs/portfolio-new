@@ -1,5 +1,5 @@
 import './About.css'
-// import { Progress } from 'antd'
+import { useContext } from 'react'
 import { Row, Col } from 'react-bootstrap'
 import { BiLogoGmail } from 'react-icons/bi'
 import { BsGithub } from 'react-icons/bs'
@@ -7,13 +7,16 @@ import { AiFillHeart } from 'react-icons/ai'
 import ReactTyped from 'react-typed'
 import Lottie from 'lottie-react'
 import chairPerson from '../../assets/Animation - 1695025323106.json'
+import { DarkModeContext } from '../../elements/Darkmode/DarkmodeToggle'
 
 
-export const About = ({ aboutRef } : any) => {
+export const About = ({ aboutRef }: any) => {
+
+    const { darkMode }: any = useContext(DarkModeContext)
 
     return (
-        <div className='about-body' ref={aboutRef}>
-            <h1 id='about-title'><ReactTyped strings={["About me."]}
+        <div className={darkMode ? 'about-body dark-mode' : 'about-body light-mode'} ref={aboutRef}>
+            <h1 className={darkMode ? 'about-title dark-mode' : 'about-title light-mode'}><ReactTyped strings={["About me."]}
                 typeSpeed={120}
                 backSpeed={150}
                 loop
