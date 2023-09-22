@@ -28,9 +28,16 @@
 .welcome-body {
   height: 100vh;
   min-height: 100vh;
-  background-color: white;
+
   position: absolute;
   left: 0px;
   right: 0px;
   top: 0px;
+}
+.container-dark {
+  background-color: black;
+  color: white;
+}
+.container-light {
+  background-color: white;
 }
