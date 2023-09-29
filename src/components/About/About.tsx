@@ -5,7 +5,7 @@ import { BiLogoGmail } from 'react-icons/bi'
 import { BsGithub } from 'react-icons/bs'
 import { AiFillHeart } from 'react-icons/ai'
 import ReactTyped from 'react-typed'
-import Lottie from 'lottie-react'
+// import Lottie from 'lottie-react'
 import { DarkModeContext } from '../../elements/Darkmode/DarkmodeToggle'
 
 
@@ -26,10 +26,7 @@ export const About = ({ aboutRef }: any) => {
                     loop
                 /></h1>
                 <Row>
-                    {/* <Col xs={11} sm={5} className='about-skills'>
-                        <h3 ref={coLRef}>My Skills</h3>
-                        <Progress percent={percentage} strokeColor="#F0DB4F" format={() => 'JS'} />
-                    </Col> */}
+                    {/*animated progressbar for skills*/}
                     <Col sm={5} xs={6} className='about-desc'>
                         <b>Hi!</b> I'm <i>Szabolcs</i> from Hungary, a young man, who loves programming. Right now I'm studying frontend developement in school.
                         This page is only for practicing and learning purposes only, but still feel free to get in touch with me!
@@ -42,12 +39,7 @@ export const About = ({ aboutRef }: any) => {
                         <BsGithub /><b> github:</b> <a href="https://www.github.com/feherszabolcs" target='_blank'>github.com/feherszabolcs</a>
                     </Col>
                     <Col sm={5} xs={6}>
-                        <i
-                            className="fas fa-car-side fa-3x"
-                            data-mdb-toggle="animation"
-                            data-mdb-animation="slide-in-left"
-                            data-mdb-animation-start="onScroll"
-                        ></i>
+                        {/*timeline for this whole page with animations to slide-in*/}
                     </Col>
                 </Row>
             </div>
