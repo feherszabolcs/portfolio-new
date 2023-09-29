@@ -13,3 +13,5 @@
   -webkit-text-size-adjust: 100%;
   overflow-x: hidden;
 }
+
+@import '../node_modules/mdb-ui-kit/css/mdb.min.css';

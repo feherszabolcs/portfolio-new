@@ -6,6 +6,11 @@
   right: 0px;
   top: 100vh;
   overflow: hidden;
+  margin: auto;
+}
+.about-container {
+  width: 90vw;
+  margin: auto;
 }
 .about-divider {
   color: white;
